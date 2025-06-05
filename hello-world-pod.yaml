@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: helloworld
+  labels: 
+    app: helloworld
+spec:
+  containers:
+  - name: helloworld
+    image: particule/helloworld
+    ports:
+    - containerPort: 80
