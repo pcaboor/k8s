@@ -14,16 +14,16 @@ spec:
           service:
             name: web1
             port:
-              number: 8080
+              number: 8081
         path: /
         pathType: Prefix
-  - host: web2.nordnet.fr
+  - host: web2.nordnet.com
     http:
       paths:
       - backend:
           service:
-            name: web2
+            name: web3
             port:
-              number: 8080
+              number: 8081
         path: /
         pathType: Prefix
